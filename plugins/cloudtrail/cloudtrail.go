@@ -183,7 +183,7 @@ func (p *pluginContext) Init(cfg string) error {
 	}
 
 	if p.useAsync {
-		extract.StartAsync(p)
+		extract.StartAsync()
 	}
 
 	return nil
@@ -193,7 +193,7 @@ func (p *pluginContext) Destroy() {
 	log.Printf("[%s] Destroy\n", PluginName)
 
 	if p.useAsync {
-		extract.StopAsync(p)
+		extract.StopAsync()
 	}
 }
 
