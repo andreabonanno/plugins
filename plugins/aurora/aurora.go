@@ -46,7 +46,7 @@ import (
 // Plugin info
 const (
 	PluginRequiredApiVersion        = "0.3.0"
-	PluginID                 uint32 = 999
+	PluginID                 uint32 = 7
 	PluginName                      = "aurora"
 	PluginDescription               = "listens to RDS aurora audit logs via aws Cloudwatch"
 	PluginContact                   = "github.com/falcosecurity/plugins/"
